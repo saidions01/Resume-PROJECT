@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Update your Education Section </h1>
+<form asp-action="UpdateEducation" method="post">
+  
+  
+        <div>
+            <input class="form-control" type="text" name="id"  hidden />
+
+
+            <label for="degree" class="form-label">Degree</label>
+            <input class="form-control" type="text" name="degree"  />
+
+            <label for="school" class="form-label"> School</label>
+            <input class="form-control" type="text" name="school"  />
+
+            <label for="graduationYear" class="form-label"> Graduation Year</label>
+            <input class="form-control" type="text" name="graduationYear"  />
+
+
+            <label for="gpa" class="form-label"> Gpa</label>
+            <input class="form-control" type="number" name="gpa"  />  
+            
+           
+
+            <br />
+        </div>
+    
+    <input type="submit" value="Submit" /> <input type="reset" />
+
+
+</form>

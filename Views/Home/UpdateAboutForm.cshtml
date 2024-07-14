@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Update About section</h1>
+<form asp-action="UpdateAbout" method="post">
+ 
+  
+
+        <div>
+            <input class="form-control" type="number" name="id"  hidden />
+
+
+            <label for="content" class="form-label">Content</label>
+            <input class="form-control" type="text" name="content"  />
+             
+            <label for="dateCreated" class="form-label"> Time Created </label>
+            <input class="form-control" type="text" name="dateCreated" />
+
+            <br />
+        </div>
+
+    <br />
+   
+    <input type="submit" value="Submit" /> <input type="reset" />
+
+
+</form>

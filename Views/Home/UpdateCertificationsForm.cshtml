@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Update Certifications</h1>
+<form asp-action="UpdateCertifications" method="post">
+
+
+
+
+
+
+        <div>
+            <input class="form-control" type="text" name="id"  hidden>
+
+
+            <label for="certificationName" class="form-label">Certification Name</label>
+            <input class="form-control" type="text" name="certificationName" />
+
+            <label for="proficiencyLevel" class="form-label">Issuing Organization</label>
+            <input class="form-control" type="text" name="issuingOrganization"  />
+
+            <label for="dateObtained" class="form-label">Date Obtained</label>
+            <input class="form-control" type="text" name="dateObtained"  />
+
+            <br /><br /><br /><br />
+        </div>
+    
+    
+   
+
+
+</form>

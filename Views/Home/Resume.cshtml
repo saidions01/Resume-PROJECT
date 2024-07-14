@@ -1,0 +1,231 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+<div class="top">
+<div class="image">
+
+    <img src="~/images/me1.png" />
+
+</div>
+
+<div class="About">
+
+
+    <h1>About: </h1>
+    <br />
+    @foreach (var Ab in ViewBag.Abouts)
+    {
+            <div>@Ab.Content</div>
+            <form asp-action="UpdateAboutForm" method="get">
+                <input type="text" value="@Ab.ID" name="id" hidden>
+                <input type="submit" value="update">
+            </form>
+
+    }
+
+        <div style="display: flex; justify-content: flex-end;">
+                <button>
+                    <a href="InsertAboutForm">Add </a>
+                </button>
+
+                <button><a href="UpdateAboutForm"> Update <a></button>
+    </div>
+
+</div>
+</div>
+<div class="row1">
+<div class="BasicInfo">
+
+    <h1>Basic Information:  </h1>
+    <br />
+    @foreach (var Bi in ViewBag.BasicInformation)
+    {
+        <div>Name: @Bi.Name</div>
+        <div> Email @Bi.Email</div>
+        <div>Phone Number: @Bi.PhoneNumber</div>
+
+    }
+
+    <div class="buttons">
+        <button >
+
+                <a href="InsertBasicInformationForm" > Add </a>
+           </button>
+
+                <button>  <a href="UpdateBasicInformationForm">Update </a> </button>
+    </div>
+
+
+</div>
+
+
+
+
+
+<div class="Skills">
+    <h1>Skills:   </h1>
+    <br />
+    @foreach (var skills in ViewBag.Skills)
+    {
+        <div>*Skill Name: @skills.SkillName |  @skills.ProficiencyLevel</div>
+      
+        
+
+    }
+    <div style="display: flex; justify-content: flex-end;">
+        <button >
+
+                <a href ="InsertSkillsForm">Add </a>
+       </button>
+
+                <button> <a href="UpdateSkillsForm"> Update</a></button>
+    </div>
+
+
+</div>
+
+    </div>
+
+
+    <div class="row2">
+
+<div class="Languages">
+
+    <h1>Languages:   </h1>
+    <br />
+    @foreach (var lang in ViewBag.Languages)
+    {
+        <div>*@lang.LanguageName | @lang.ProficiencyLevel</div>
+        <form asp-action="UpdateLanguagesForm" method="get">
+            <input type="text" value="@lang.ID" name="id" hidden>
+            <input type="submit" value="update" >
+        </form>
+
+    }
+    <div style="display: flex; justify-content: flex-start; margin-top:10px;">
+        <button >
+
+                <a href="InsertLanguagesForm">  Add  </a>
+            
+           </button>
+
+                <button> <a href="UpdateLanguagesForm">Update</a>  </button>
+    </div>
+
+</div>
+
+
+
+
+<div class="Education">
+    <h1>Education:  </h1>
+
+
+    @foreach (var edu in ViewBag.Education)
+    {
+        <div>*Degree :@edu.Degree</div>
+        <div>*School: @edu.School</div>
+        <div>*Graduation Year: @edu.GraduationYear</div>
+        <div>*GPA: @edu.GPA</div>
+        <br />
+    }
+    <br />
+    <div style="display: flex; justify-content: flex-end;">
+                <button><a href="InsertEducationForm">Add</a>  </button>
+
+                <button><a href="UpdateEducationForm">Update</a></button>
+    </div>
+
+
+</div>
+
+
+    </div>
+
+
+    <div class="row3">
+<div class="Certifications">
+    <h1>Certifications:  </h1>
+
+    @foreach (var skills in ViewBag.Certifications)
+    {
+        <div>*Certification Name: @skills.CertificationName</div>
+        <div>*Issuing Organization: @skills.IssuingOrganization</div>
+        <div>*Date Obtained: @skills.DateObtained</div>
+       
+        <br/>
+
+    }
+    <br />
+    <div style="display: flex; justify-content: flex-end;">
+                <button >
+                    <a href="InsertCertificationsForm"> Add</a>
+           </button>
+
+                <button> <a href="UpdateCertificationsForm">Update</a> </button>
+    </div>
+
+
+
+</div>
+
+
+
+
+<div class="Projects">
+
+    <h1>Projects:  </h1>
+    <br />
+    @foreach (var skills in ViewBag.Projects)
+    {
+                <div> *Project Name: @skills.ProjectName</div>
+                <div> *Description : @skills.Description</div>
+                <div> *Technologies Used: @skills.TechnologiesUsed</div>
+                <div> *Duration in months: @skills.Duration</div>
+
+         <br />
+    }
+    <br />
+    <div style="display: flex; justify-content: flex-end;">
+                <button> <a href="InsertProjectsForm">Add</a>  </button>
+
+                <button> <a href="UpdateProjectsForm">Update</a> </button>
+    </div>
+
+
+</div>
+
+    </div>
+
+
+
+
+<br />
+    <div class="row4">
+<div class="Experience" style="margin-bottom:20px;">
+    <h1>Experience:  </h1>
+    <br />
+    @foreach (var exp in ViewBag.Experience)
+    {
+        <div>*Job Title: @exp.JobTitle</div>
+        <div>*Company: @exp.Company</div>
+        <div>*Start Date: @exp.StartDate</div>
+        <div>*End Date: @exp.EndDate</div>
+        <div>*Responsibilities: @exp.Responsibilities</div>
+
+        <br/>
+
+    }
+
+    <div style="display: flex; justify-content: flex-end;">
+            <button> <a href="InsertExperienceForm">Add</a>  </button>
+
+            <button> <a href="UpdateExperienceForm">Update</a></button>
+    </div>
+
+</div>
+</div>

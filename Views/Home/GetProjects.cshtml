@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<table border='1'>
+    <thead>
+        <table border='1'>
+            <thead>
+
+            <th>ID </th>
+            <th>ProjectName</th>
+            <th>Description</th>
+            <th>TechnologiesUsed</th>
+            <th>Duration</th>
+    </thead>
+
+            @{
+        <tbody>
+
+                    @foreach (var c in ViewBag.ListOfProjects)
+                    {
+                <tr>
+                    <td> @c.ID </td>
+                    <td> @c.ProjectName </td>
+                    <td> @c.Description </td>
+                    <td> @c.TechnologiesUsed</td>
+                    <td> @c.Duration</td>
+
+                </tr>
+                    }
+        </tbody>
+
+            }
+
+</table>
