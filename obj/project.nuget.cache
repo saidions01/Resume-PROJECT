@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j1kzRYx0VcUFe0J4th6eQ0tp8QqV9eP4jq1oakJt8zhbhAICyPL0V9ZyE6LCsNv8OTTU0EVMhN/rsiboY700UQ==",
+  "dgSpecHash": "vg2YLoEim19y59c4tas6S3Eak5cBuki8rtQMnqQMLzB5sdXav74DZd1ZQny5UK+U3tAF2D+rllafxRmV5sUEsQ==",
   "success": true,
-  "projectFilePath": "D:\\studies in the us\\first semester in US\\dotnet projects\\ResumeProject\\ResumeProject.csproj",
+  "projectFilePath": "C:\\Users\\Onsouuus\\Desktop\\ResumeProject\\ResumeProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Onsouuus\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Onsouuus\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
